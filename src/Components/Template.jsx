@@ -7,7 +7,7 @@ const Template = () => {
   return (
     //header
     
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen px-20">
         <div className='text-white px-8 py-4 '>
             <div className='container mx-auto flex justify-between items-center px-16 font-bold '>
                 
@@ -72,7 +72,7 @@ const Template = () => {
     </div>
 
     //high resolution
-    <div className='py-16'>
+    <div className='py-16 mt-5'>
         <div className='container mx-auto px-4 flex flex-col md:flex-row items-center'>
             //text section
             <div className='md-w-1/2 text-white text-left mb-8 md:mb-0'>
@@ -136,7 +136,72 @@ const Template = () => {
             
         </div>
     </div>
+    //transforming imagination
+    <div className='text-white mr-20 ml-20 '>
+            <h1 className='text-6xl font-bold mb-4 mt-14 text-left leading-tight'>Transforming<br></br>Imagination into <span className='text-purple-500'>Reality</span></h1>
+            <p>Unlock the full potential of your creativity with our AI-powered design assistant .<br></br>Explore new dimensions of design,from futuristic visuals to timeless craftsmanship,<br></br>and witness how AI can turn your wildest ideas into stunning realities.</p>
+            
+   
     </div>
+    <div className="py-16 bg-black">
+  <div className="container mx-auto px-20 flex flex-wrap gap-6">
+    <div className='flex w-full gap-6'>
+    {/* Box 1 */}
+    <div className="bg-gray-800 text-white rounded-2xl shadow-md p-6 h-52 w-1/3 relative">
+    <button className="absolute top-4 right-4 bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
+          
+        </button>
+      <p className="text-sm mb-6">
+        Dive into the world of AI where design possibilities<br /> are limitless. Let the cutting-edge technology<br />
+        transform your concepts into breathtaking visuals.
+      </p>
+      <h3 className="mt-20 text-xl">Witness the Future</h3>
+    </div>
+    {/* Box 2 */}
+    <div className="bg-gray-800 text-white rounded-2xl shadow-md p-6 w-2/3 h-52 relative">
+    <button className="absolute top-4 right-4 bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
+          
+        </button>
+      <p className="text-sm mb-6">
+        Step beyond the ordinary with designs that defy conventions.<br />
+        Our AI conjures up imaginative visuals that push the<br />
+        boundaries of creativity.
+      </p>
+      <h3 className="mt-20  text-xl">Visualize the Impossible</h3>
+    </div>
+</div>
+    {/*Row-2*/}
+    <div className='flex w-full gap-6'>
+    {/* Box 3 */}
+    <div className="bg-gray-800 text-white rounded-2xl shadow-md p-6 w-2/3 h-52 relative">
+    <button className="absolute top-4 right-4 bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
+          
+        </button>
+      <p className="text-sm mb-6">
+        Experience the perfect blend of form and function. Our AI<br />
+        ensures that every design not only looks stunning but also<br />
+        serves its purpose flawlessly.
+      </p>
+      <h3 className="mt-20 text-xl">Synergy and Style</h3>
+      
+    </div>
+    {/* Box 4 */}
+    <div className="bg-gray-800 text-white rounded-2xl shadow-md p-6 w-1/3 h-52 relative">
+    <button className="absolute top-4 right-4 bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
+          
+        </button>
+      <p className="text-sm mb-6">
+        Embrace the elegance of meticulously crafted<br />
+        designs. Our AI polishes every detail to bring a<br />
+        timeless quality to your creative projects.
+      </p>
+      <h3 className="mt-20 text-xl">Timeless Precision</h3>
+    </div>
+  </div>
+  </div>
+  </div>
+
+</div>
 
   )
 }
