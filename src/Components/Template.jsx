@@ -2,14 +2,15 @@ import React from 'react'
 import HighResolution_icon from '../assets/HighResolution.png'
 import Real_icon from '../assets/Real-time.png'
 import Scheduling_icon from '../assets/Scheduling.png'
+import button_icon from '../assets/button.png'
 
 const Template = () => {
   return (
     //header
     
-    <div className="bg-black min-h-screen px-20">
+    <div className="bg-black min-h-screen lg:m-0 lg:px-20">
         <div className='text-white px-8 py-4 '>
-            <div className='container mx-auto flex justify-between items-center px-16 font-bold '>
+            <div className='container mx-auto flex justify-between items-center lg:px-16 font-bold '>
                 
                 <div className='font-lg'>NjamAI</div>
                 <div className='flex space-x-4'>More Templates</div>
@@ -19,7 +20,7 @@ const Template = () => {
     
 
     //get started
-    <div className='py-16 bg-gray-900 text-white text-center rounded-3xl mr-20 ml-20'>
+    <div className='py-16 bg-zinc-700 text-white text-center rounded-3xl lg:mr-20 lg:ml-20 mx-4 md:mx-8'>
         <div className='container mx-auto px-4'>
             <h1 className='text-7xl font-bold mb-4 text-left leading-tight'>
                 Your AI-Powered <br></br><span className='text-purple-500'>Design</span> Assistant
@@ -44,7 +45,7 @@ const Template = () => {
     </div>
 
     //unleash creativity
-    <div className='text-white mr-20 ml-20 '>
+    <div className='text-white lg:mr-20 lg:ml-20 mx-4 md:mx-8'>
             <h1 className='text-6xl font-bold mb-4 mt-14 text-left leading-tight'>Unleash Your <span className='text-purple-500'>Creativity</span></h1>
             <p>Discover how our AI-Powered Design Assistant transforms your ideas into stunning <br></br>designs effortlessly,Follow these simple steps to turn your vision into reality</p>
             
@@ -56,7 +57,7 @@ const Template = () => {
         <div className='container mx-auto px-4'>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:px-14 text-white'>
                 {["Upload Brief","Generate Designs","Refine Creation"].map((feature,index)=>(
-                    <div key={index} className='bg-gray-900 rounded-lg shadow p-6 text-left '>
+                    <div key={index} className='bg-zinc-700 rounded-lg shadow p-6 text-left '>
                         <h3 className='text-3xl mb-4 text-white'>{feature}</h3>
                         <p>
                         {feature === "Upload Brief"
@@ -137,65 +138,73 @@ const Template = () => {
         </div>
     </div>
     //transforming imagination
-    <div className='text-white mr-20 ml-20 '>
-            <h1 className='text-6xl font-bold mb-4 mt-14 text-left leading-tight'>Transforming<br></br>Imagination into <span className='text-purple-500'>Reality</span></h1>
-            <p>Unlock the full potential of your creativity with our AI-powered design assistant .<br></br>Explore new dimensions of design,from futuristic visuals to timeless craftsmanship,<br></br>and witness how AI can turn your wildest ideas into stunning realities.</p>
+    <div className='text-white lg:mr-20 lg:ml-20 '>
+            <h1 className='text-6xl font-bold px-4 mb-4 mt-14 text-left leading-tight'>Transforming<br></br>Imagination into <span className='text-purple-500'>Reality</span></h1>
+            <p className='px-4'>Unlock the full potential of your creativity with our AI-powered design assistant .<br></br>Explore new dimensions of design,from futuristic visuals to timeless craftsmanship,<br></br>and witness how AI can turn your wildest ideas into stunning realities.</p>
             
    
     </div>
-    <div className="py-16 bg-black">
-  <div className="container mx-auto px-20 flex flex-wrap gap-6">
-    <div className='flex w-full gap-6'>
+    <div className="py-16 min-h-screen bg-black">
+  <div className="container mx-auto px-4 md:px-20 flex flex-wrap gap-4">
+    <div className='flex w-full gap-4'>
     {/* Box 1 */}
-    <div className="bg-gray-800 text-white rounded-2xl shadow-md p-6 h-52 w-1/3 relative">
-    <button className="absolute top-4 right-4 bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
-          
-        </button>
-      <p className="text-sm mb-6">
+    <div className="bg-zinc-700 text-white rounded-2xl shadow-md p-6 md:h-72 md:w-2/5  w-full relative">
+    <img
+          src={button_icon}
+          alt="Arrow Icon"
+          className="absolute top-4 right-4  w-8 h-8 bg-zinc-700 rounded-full"
+        />
+      <p className="text-sm mb-6 mt-8 md:mt-0">
         Dive into the world of AI where design possibilities<br /> are limitless. Let the cutting-edge technology<br />
         transform your concepts into breathtaking visuals.
       </p>
-      <h3 className="mt-20 text-xl">Witness the Future</h3>
+      <h3 className="mt-40  text-2xl">Witness the Future</h3>
     </div>
     {/* Box 2 */}
-    <div className="bg-gray-800 text-white rounded-2xl shadow-md p-6 w-2/3 h-52 relative">
-    <button className="absolute top-4 right-4 bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
-          
-        </button>
-      <p className="text-sm mb-6">
+    <div className="bg-zinc-700 text-white rounded-2xl shadow-md p-6 md:w-3/5 md:h-72 w-full relative">
+    <img
+          src={button_icon}
+          alt="Arrow Icon"
+          className="absolute top-4 right-4 w-8 h-8 bg-zinc-700 rounded-full"
+        />
+      <p className="text-sm mb-6 mt-8 md:mt-0">
         Step beyond the ordinary with designs that defy conventions.<br />
         Our AI conjures up imaginative visuals that push the<br />
         boundaries of creativity.
       </p>
-      <h3 className="mt-20  text-xl">Visualize the Impossible</h3>
+      <h3 className="mt-40  text-2xl">Visualize the Impossible</h3>
     </div>
 </div>
     {/*Row-2*/}
-    <div className='flex w-full gap-6'>
+    <div className='flex w-full gap-4'>
     {/* Box 3 */}
-    <div className="bg-gray-800 text-white rounded-2xl shadow-md p-6 w-2/3 h-52 relative">
-    <button className="absolute top-4 right-4 bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
-          
-        </button>
-      <p className="text-sm mb-6">
+    <div className="bg-zinc-700 text-white rounded-2xl shadow-md p-6 md:w-3/5 md:h-72 w-full relative">
+    <img
+          src={button_icon}
+          alt="Arrow Icon"
+          className="absolute top-4 right-4 w-8 h-8 bg-zinc-700 rounded-full"
+        />
+      <p className="text-sm mb-6 mt-8 md:mt-0 ">
         Experience the perfect blend of form and function. Our AI<br />
         ensures that every design not only looks stunning but also<br />
         serves its purpose flawlessly.
       </p>
-      <h3 className="mt-20 text-xl">Synergy and Style</h3>
+      <h3 className="md:mt-40 mt-44 text-2xl">Synergy and Style</h3>
       
     </div>
     {/* Box 4 */}
-    <div className="bg-gray-800 text-white rounded-2xl shadow-md p-6 w-1/3 h-52 relative">
-    <button className="absolute top-4 right-4 bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
-          
-        </button>
-      <p className="text-sm mb-6">
+    <div className="bg-zinc-700 text-white rounded-2xl shadow-md p-6 md:w-2/5 md:h-72 w-full relative">
+    <img
+          src={button_icon}
+          alt="Arrow Icon"
+          className="absolute top-4 right-4 w-8 h-8 bg-zinc-700 rounded-full"
+        />
+      <p className="text-sm mb-6 mt-8 md:mt-0">
         Embrace the elegance of meticulously crafted<br />
         designs. Our AI polishes every detail to bring a<br />
         timeless quality to your creative projects.
       </p>
-      <h3 className="mt-20 text-xl">Timeless Precision</h3>
+      <h3 className="mt-40 text-2xl">Timeless Precision</h3>
     </div>
   </div>
   </div>
